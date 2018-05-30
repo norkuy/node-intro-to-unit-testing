@@ -32,7 +32,7 @@ describe('fizzBuzzer', function() {
 
      it('should throw an error when arg is non-number', function() {
         
-        const badInputs = ['h','c','d','f'];
+        const badInputs = ['h',undefined,null,{a: 100}];
  
         badInputs.forEach(function(input) {
          expect(function() {fizzBuzzer(input)}).to.throw(Error);
